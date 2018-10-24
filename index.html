@@ -6,9 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Poster Search</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+  <header class="site-header">
+    <h1 class="site-logo">Poster Search</h1>
+  </header>
+
+  <main>
+    <section class="poster-search-results__wrapper">
+      <form class="poster-search-form" action="GET">
+        <label for="poster-search">
+          <span class="srt">Search</span>
+          <input class="poster-search-value" id="poster-search" type="text" />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+
+      <ul class="poster-search-results">
+        
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with <span class="heart">&hearts;</span> by Terrance Corley.</p>
+  </footer>
   
   <script src="js/index.js"></script>
 </body>
