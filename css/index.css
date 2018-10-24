@@ -12,8 +12,9 @@ GENERAL
   font-size: 1rem;
 
   --color--primary: #333;
-  --color-secondary: #fefefe;
-  --color-accent: violet;
+  --color--secondary: #fefefe;
+  --color--accent: violet;
+  --background-color--primary: #fefefe;
 }
 
 html {
@@ -24,6 +25,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   color: var(--color--primary);
+  background-color: var(--background-color--primary);
 }
 
 ul {
@@ -62,10 +64,11 @@ SITE HEADER
   display: flex;
   justify-content: center;
   align-items: center;
-  background: 
+  background:
     linear-gradient(
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.2) 95%,
+      rgba(254, 254, 254, 1)
     ),
     url('../assets/movie-theatre.jpg');
   background-repeat: no-repeat;
@@ -76,10 +79,10 @@ SITE HEADER
 h1 {
   font-family: 'Monoton', cursive;
   font-size: 1.5em;
-  text-shadow: 2px 2px 2px var(--color-accent);
+  text-shadow: 2px 2px 2px var(--color--accent);
   letter-spacing: 0.125em;
   margin: 0 0 3em;
-  color: var(--color-secondary);
+  color: var(--color--secondary);
 }
 
 
@@ -87,11 +90,19 @@ h1 {
 POSTER SECTION
 ******************************/
 
+main {
+  padding: 0 5%;
+}
+
 
 
 /****************************** 
 SITE FOOTER
 ******************************/
+
+.site-footer {
+  text-align: center;
+}
 
 .heart {
   color: red;
