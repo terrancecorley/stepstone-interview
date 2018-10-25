@@ -152,8 +152,6 @@ POSTER SECTION
 .poster-search-btn:focus {
   cursor: pointer;
   background-color: var(--btn-color--hover);
-  letter-spacing: 10px;
-  width: 11em;
 }
 
 .poster-search-results {
@@ -189,4 +187,30 @@ SITE FOOTER
 
 .heart {
   color: red;
+}
+
+
+
+
+/****************************** 
+MEDIA QUERIES
+******************************/
+@media screen and (min-width: 40em) {
+  .site-header {
+    font-size: 1.8rem;
+    height: 350px;
+  }
+
+  .poster-search-btn:hover,
+  .poster-search-btn:focus {
+    letter-spacing: 10px;
+    width: 11em;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .site-header {
+    font-size: 2.2rem;
+    height: 400px;
+  }
 }
