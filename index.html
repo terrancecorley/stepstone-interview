@@ -4,12 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Poster Search is a mock website that web developer Terrance Corley was tasked with creating as part of a job interview.">
   <title>Poster Search</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/min.css">
 </head>
 <body>
+  <header class="site-header">
+    <h1 class="site-logo">Poster Search</h1>
+  </header>
+
+  <main>
+    <section class="poster-search-results__wrapper">
+      <form class="poster-search-form" action="GET">
+        <label for="poster-search-input">
+          <span class="srt">Search</span>
+          <input class="poster-search-input" id="poster-search-input" type="text" placeholder="Search a movie poster..."/>
+        </label>
+        <button class="poster-search-btn" id="poster-search-btn" type="submit">Search</button>
+      </form>
+
+      <ul class="poster-search-results" id="poster-search-results">
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with <span class="heart">&hearts;</span> by Terrance Corley.</p>
+  </footer>
   
+  <script src="js/config.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
