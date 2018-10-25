@@ -1,7 +1,7 @@
 (() => {
   
   const submitBtn = document.querySelector('#poster-search-btn');
-  const apiKey= config.MOVIE_DB_KEY || process.env.MOVIE_DB_KEY;
+  const apiKey= config.MOVIE_DB_KEY || '9a5700da51ef480cb90362dc8e1ce2ae';
   const baseURL = 'https://api.themoviedb.org/3';
   const basePosterPath = 'https://image.tmdb.org/t/p/w500';
 
