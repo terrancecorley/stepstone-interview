@@ -1,0 +1,23 @@
+{
+  "name": "stepstone-interview",
+  "version": "1.0.0",
+  "description": "Mock poster website that utilizes The Movie DB API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrancecorley/stepstone-interview.git"
+  },
+  "author": "Terrance Corley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terrancecorley/stepstone-interview/issues"
+  },
+  "homepage": "https://github.com/terrancecorley/stepstone-interview#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
