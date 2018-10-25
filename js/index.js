@@ -22,10 +22,10 @@
           let movieSrc = basePosterPath + poster.poster_path;
           let movieAlt = `${movieInput} movie poster`;
           movies += `
-            <li>
+            <li class="poster">
               <img
-                src=${movieSrc}
-                alt=${movieAlt} />
+                src="${movieSrc}"
+                alt="${movieAlt}" />
             </li>
           `;
         }

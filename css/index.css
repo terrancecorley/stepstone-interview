@@ -60,6 +60,16 @@ img {
   word-wrap: normal !important;
 }
 
+/* Keyframes */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 /****************************** 
@@ -111,7 +121,8 @@ POSTER SECTION
 
 .poster-search-input {
   height: 40px;
-  width: 250px;
+  width: 280px;
+  margin-bottom: 1em;
   padding: 0.4em;
   border: 1px solid var(--color--primary);
 }
@@ -130,19 +141,39 @@ POSTER SECTION
   letter-spacing: 1px;
   color: var(--color--secondary);
   background-color: var(--btn-color);
-  transition: background-color 0.2s ease-out;
+  width: 5.5em;
+  transition: 
+    background-color 0.2s ease-out,
+    letter-spacing 0.2s ease-out,
+    width 0.2s ease-out;
 }
 
 .poster-search-btn:hover,
 .poster-search-btn:focus {
   cursor: pointer;
   background-color: var(--btn-color--hover);
+  letter-spacing: 10px;
+  width: 11em;
 }
 
 .poster-search-results {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1250px;
+}
+
+.poster {
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  animation: fade-in 0.4s ease-in;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 
@@ -152,6 +183,7 @@ SITE FOOTER
 
 .site-footer {
   font-size: 0.9rem;
+  margin-top: 2em;
   text-align: center;
 }
 
