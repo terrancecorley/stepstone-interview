@@ -196,11 +196,13 @@ SITE FOOTER
 MEDIA QUERIES
 ******************************/
 @media screen and (min-width: 40em) {
+  /* Site Header */
   .site-header {
     font-size: 1.8rem;
     height: 350px;
   }
 
+  /* Poster Section */
   .poster-search-btn:hover,
   .poster-search-btn:focus {
     letter-spacing: 10px;
