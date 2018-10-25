@@ -1,5 +1,16 @@
 (() => {
-  // placeholder comment
+  
+  const submitBtn = document.querySelector('#poster-search-btn');
+  const apiKey= config.MOVIE_DB_KEY;
+  const baseURL = 'https://api.themoviedb.org/3';
+
+  submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    let movieInput = document.querySelector('#poster-search-input').value;
+    fetch(`${baseURL}/search/movie?api_key=${apiKey}&query=${movieInput}`)
+      .then(res => console.log(res.json()));
+  });
+
 })();
 
 // ## Project
